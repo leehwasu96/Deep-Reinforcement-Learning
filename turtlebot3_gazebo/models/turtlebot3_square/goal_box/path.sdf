@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='path'>
+    <pose frame=''>0 0 0 0 -0 -1.5708</pose>
+    <static>1</static>
+
+    <!-- Path waypoint -->
+    <link name='circles'>
+      <visual name='circle_1'>
+        <pose frame=''>0 0 0.0005 0 -0 0</pose> <!-- Modify postion -->
+        <geometry>
+          <cylinder>
+            <radius>0.01</radius> <!-- Modify size -->
+            <length>0.001</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+
+    </link>
+  </model>
+</sdf>
+

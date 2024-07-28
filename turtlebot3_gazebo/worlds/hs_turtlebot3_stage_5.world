@@ -1,0 +1,203 @@
+<sdf version='1.6'>
+  <world name='maze_world'>
+    <!-- Global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Physics settings -->
+    <physics type="ode">
+      <real_time_update_rate>1000.0</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>150</iters>
+          <sor>1.400000</sor>
+        </solver>
+        <constraints>
+          <cfm>0.00001</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>2000.000000</contact_max_correcting_vel>
+          <contact_surface_layer>0.01000</contact_surface_layer>
+        </constraints>
+      </ode>
+    </physics>
+
+    
+    <!-- Scene lighting and background -->
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>true</shadows>
+    </scene>
+
+    <!-- Adjusted Camera settings for a top-down view -->
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>10 0 35 0 1.57 0</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+
+    <!-- Maze structure with open top -->
+    <model name='open_top_maze'>
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <!-- External boundaries of the maze -->
+      <!-- North wall -->
+      <link name='north_wall'>
+        <pose>10 10 1 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>20.5 0.5 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>20.5 0.5 2</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <!-- South wall -->
+      <link name='south_wall'>
+        <pose>10 -10 1 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>20.5 0.5 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>20.5 0.5 2</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <!-- West wall -->
+      <link name='west_wall'>
+        <pose>0 0 1 0 0 1.5708</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>20.5 0.5 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>20.5 0.5 2</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <!-- East wall -->
+      <link name='east_wall'>
+        <pose>20 0 1 0 0 1.5708</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>20.5 0.5 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>20.5 0.5 2</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <!-- Additional internal walls -->
+      <!-- Internal Wall 1 -->
+      <link name='internal_wall_1'>
+        <pose>2 0 1 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.5 16.5 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.5 16.5 2</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <!-- Internal Wall 2 -->
+      <link name='internal_wall_2'>
+        <pose>18 0 1 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.5 16.5 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.5 16.5 2</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <!-- Internal Wall 3 -->
+      <link name='internal_wall_3'>
+        <pose>10 8 1 0 0 1.5708</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.5 16.5 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.5 16.5 2</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <!-- Internal Wall 4 -->
+      <link name='internal_wall_4'>
+        <pose>10 -8 1 0 0 1.5708</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.5 16.5 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.5 16.5 2</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+      <!-- Continue adding more internal walls as needed -->
+    </model>
+  </world>
+</sdf>
+
