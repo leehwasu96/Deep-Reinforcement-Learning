@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Reinforcement Learning with DDPG
 
 For this project my goal is to create a Deep reinforcement learning Code that can avoid obstacles while trying to get to a target
