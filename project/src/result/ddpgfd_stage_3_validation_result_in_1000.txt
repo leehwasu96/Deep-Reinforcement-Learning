@@ -1,0 +1,5 @@
+Collision: 154
+Total reached goal times: 846
+Everage time: 13.8452009456
+Everage step: 59
+Everage reward: 39.6087470449

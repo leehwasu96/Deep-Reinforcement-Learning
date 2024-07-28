@@ -1,0 +1,8 @@
+<launch>
+  <arg name="stage" default="3"/> <!-- Modify stage number 1 to 3 -->
+  <param name="stage_number"  value="$(arg stage)"/>
+  <node pkg="project" type="ddpg_per_stage_3.py" name="ddpg_per_stage_3" output="screen" />
+  <node pkg="project" type="dynamic_obstacles.py" name="dynamic_obstacles" output="screen" />
+
+   
+</launch>

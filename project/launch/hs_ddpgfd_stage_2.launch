@@ -1,0 +1,6 @@
+<launch>
+  <arg name="stage" default="2"/> <!-- Modify stage number 1 to 2 -->
+  <param name="stage_number"  value="$(arg stage)"/>
+  <node pkg="project" type="ddpgfd_stage_2.py" name="ddpgfd_stage_2" output="screen" />
+</launch>
+

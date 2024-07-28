@@ -1,0 +1,6 @@
+<launch>
+  <arg name="stage" default="1"/>
+  <param name="stage_number"  value="$(arg stage)"/>
+  <node pkg="project" type="validation.py" name="validation" output="screen" />
+  <node pkg="project" type="dynamic_obstacles.py" name="dynamic_obstacles" output="screen" />
+</launch>

@@ -1,0 +1,7 @@
+<launch>
+  <arg name="stage" default="3"/>
+  <param name="stage_number"  value="$(arg stage)"/>
+  <node pkg="project" type="dynamic_obstacles.py" name="dynamic_obstacles" output="screen" />
+  <node pkg="project" type="collect_transition.py" name="collect_transition" output="screen" />
+
+</launch>
