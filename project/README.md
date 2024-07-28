@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Reinforcement Learning with DDPG
 
 For this project my goal is to create a Deep reinforcement learning Code that can avoid obstacles while trying to get to a target
@@ -57,7 +56,3 @@ In another terminal run:
 ```
 roslaunch project ddpg_stage_{number_of_stage}.launch
 ```
-=======
-# Deep-Reinforcement-Learning
-This repository designs and validates an End-to-End controller that learns control inputs for moving a Turtlebot3 model to a desired location based on Deep Reinforcement Learning in the ROS Gazebo simulation environment.
->>>>>>> 0908e43805f79235a25784bed85bad4cbd020b92
