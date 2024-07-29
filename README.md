@@ -25,3 +25,18 @@ source devel/setup.bash
 roscd turtlebot3_description/urdf
 gedit turtlebot3_burger.gazebo.xacro
 ```
+
+```
+<xacro:arg name="laser_visual" default="false"/>   # Visualization of LDS. If you want to see LDS, set to `true`
+```
+And
+```
+<scan>
+  <horizontal>
+    <samples>360</samples>            # The number of sample. Modify it to 10
+    <resolution>1</resolution>
+    <min_angle>0.0</min_angle>
+    <max_angle>6.28319</max_angle>
+  </horizontal>
+</scan>
+```
