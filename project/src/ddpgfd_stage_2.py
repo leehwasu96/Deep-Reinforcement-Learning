@@ -7,15 +7,10 @@ import numpy as np
 import random
 import time
 import sys
-sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
-from collections import deque
-from std_msgs.msg import Float32
 
-sys.path.append('/home/unicon1/catkin_ws/src/project/src/utils/')
+current_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(current_dir+'/utils')
 from environment_stage_1 import Env
-from per import PrioritizedReplayBuffer, NStepBackup
-import per_utils as utils
-import pickle, joblib
 
 import torch
 import torch.nn.functional as F
@@ -24,7 +19,11 @@ import torch.nn as nn
 import math
 from collections import deque
 import copy
+from std_msgs.msg import Float32
 
+from per import PrioritizedReplayBuffer, NStepBackup
+import per_utils as utils
+import pickle, joblib
 
 #---Directory Path---#
 dirPath = os.path.dirname(os.path.realpath(__file__))
