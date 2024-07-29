@@ -53,7 +53,7 @@ And
 
 ## 4. Setting up Turtlebot3 world file.
 ```
-cd catkin_ws/src/Deep-Reinforcement-Learning/turtlebot3_gazebo/worlds
+cd ~ && cd catkin_ws/src/Deep-Reinforcement-Learning/turtlebot3_gazebo/worlds
 ```
 And
 ```
@@ -76,5 +76,9 @@ source ~/.bashrc
 ```
 And
 ```
-roscd project/launch
+cd ~ && cd catkin_ws/src/Deep-Reinforcement-Learning/turtlebot3_gazebo/launch
+```
+And
+```
+cp * ~/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch
 ```
