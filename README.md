@@ -40,7 +40,7 @@ echo 'export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/{your local PC name}/catki
 echo 'export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/{your local PC name}/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo:$ROS_PACKAGE_PATH' >> ~/.bashrc
 echo 'export ROS_PACKAGE_PATH=/home/{your local PC name}/catkin_ws/src/Deep-Reinforcement-Learning/project:$ROS_PACKAGE_PATH' >> ~/.bashrc
 ```
-Example image
+Example image of a bashrc file
 ![1](https://github.com/user-attachments/assets/78b55cd0-44ed-49e1-b88c-e9a77a63513d)
 
 
