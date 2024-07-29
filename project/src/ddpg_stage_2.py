@@ -7,13 +7,10 @@ import numpy as np
 import random
 import time
 import sys
-sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
-from collections import deque
-from std_msgs.msg import Float32
 
-sys.path.append('/home/unicon1/catkin_ws/src/project/src/utils/')
+current_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(current_dir+'/utils')
 from environment_stage_1 import Env
-from remove_log import delete_ddpg_logs
 
 import torch
 import torch.nn.functional as F
@@ -22,6 +19,7 @@ import torch.nn as nn
 import math
 from collections import deque
 import copy
+from std_msgs.msg import Float32
 
 
 #---Directory Path---#
@@ -449,7 +447,6 @@ if __name__ == '__main__':
         
         if ep%10 == 0:
             trainer.save_models(ep)
-            #delete_ddpg_logs()
 
     total_end_time = time.time()
     total_train_time = round(total_end_time-total_start_time, 2)
