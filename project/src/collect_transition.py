@@ -8,10 +8,12 @@ import os
 import pickle
 import sys
 import copy
-sys.path.append('/home/unicon1/catkin_ws/src/project/src/utils/')
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(current_dir+'/utils')
 from environment_stage_1 import Env
 
-dirPath = os.path.dirname(os.path.realpath(__file__))
+#dirPath = os.path.dirname(os.path.realpath(__file__))
 
 class Actor(nn.Module):
     def __init__(self, state_dim, action_dim, action_limit_v, action_limit_w):
