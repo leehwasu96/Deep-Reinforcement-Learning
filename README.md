@@ -60,6 +60,7 @@ And
 ```
 gedit turtlebot3_burger.gazebo.xacro
 ```
+And
 ```
 <xacro:arg name="laser_visual" default="false"/>
 ```
