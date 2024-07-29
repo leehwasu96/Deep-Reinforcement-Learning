@@ -5,8 +5,6 @@ This repository designs and validates an End-to-End controller that learns contr
 
 # How to use
 
-<br>
-
 ## 1. Installing packages related to ROS Gazebo simulation.
 ```
 cd ~/catkin_ws/src/
