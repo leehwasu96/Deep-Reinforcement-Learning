@@ -31,7 +31,6 @@ source devel/setup.bash
 - In: turtlebot3/turtlebot3_description/urdf/turtlebot3_burger.gazebo.xacro.
 ```
 roscd turtlebot3_description/urdf
-gedit turtlebot3_burger.gazebo.xacro
 ```
 If you encounter the error "roscd: No such package/stack 'turtlebot3_description/urdf'", execute the following command and then source it:
 ```
@@ -59,19 +58,16 @@ And
 <br>
 
 ```
+gedit turtlebot3_burger.gazebo.xacro
+```
+```
 <xacro:arg name="laser_visual" default="false"/>
 ```
 Visualization of LDS. If you want to see LDS, set it to true as follows:
 ```
 <xacro:arg name="laser_visual" default="true"/>
 ```
-
-<br>
-
 And
-
-<br>
-
 ```
 <scan>
   <horizontal>
