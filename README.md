@@ -50,6 +50,15 @@ And
 <br>
 
 ```
+source ~/.bashrc
+```
+<br>
+
+And
+
+<br>
+
+```
 <xacro:arg name="laser_visual" default="false"/>
 ```
 Visualization of LDS. If you want to see LDS, set it to true as follows:
@@ -105,10 +114,7 @@ roscd turtlebot3_gazebo/worlds
 ## 5. Configuring Turtlebot3 launch file.
 if 
 
-And
-```
-source ~/.bashrc
-```
+
 And
 ```
 cd ~ && cd catkin_ws/src/Deep-Reinforcement-Learning/turtlebot3_gazebo/launch
