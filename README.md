@@ -14,11 +14,15 @@ git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations
 git clone https://github.com/leehwasu96/Deep-Reinforcement-Learning.git
 ```
 
+<br><br>
+
 2. Building and sourcing the catkin workspace.
 ```
 cd ~/catkin_ws && catkin_make
 source devel/setup.bash
 ```
+
+<br><br>
 
 3. Configuring LiDAR scan data.
 - In: turtlebot3/turtlebot3_description/urdf/turtlebot3_burger.gazebo.xacro.
