@@ -15,9 +15,12 @@ import copy
 import ddpg_stage_4 as ddpg_stage
 #import ddpgfd_stage_2 as ddpgfd_stage
 
-from environment_stage_1 import Env
+#from environment_stage_1 import Env
+#dirPath = os.path.dirname(os.path.realpath(__file__))
 
-dirPath = os.path.dirname(os.path.realpath(__file__))
+current_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(current_dir+'/utils')
+from environment_stage_1 import Env
 
 
 def save_result(result_list, filename):
