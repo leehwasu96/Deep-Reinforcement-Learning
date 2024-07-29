@@ -67,7 +67,10 @@ roscd turtlebot3_gazebo/worlds
 <br><br>
 
 ## 5. Configuring Turtlebot3 launch file.
-```
+```export TURTLEBOT3_MODEL=burger
+echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
+echo 'export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/unicon1/catkin_ws/src/turtlebot3:$ROS_PACKAGE_PATH' >> ~/.bashrc
+echo 'export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/unicon1/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo:$ROS_PACKAGE_PATH' >> ~/.bashrc
 echo 'export ROS_PACKAGE_PATH=/home/unicon1/catkin_ws/src/Deep-Reinforcement-Learning/project:$ROS_PACKAGE_PATH' >> ~/.bashrc
 ```
 And
@@ -81,4 +84,16 @@ cd ~ && cd catkin_ws/src/Deep-Reinforcement-Learning/turtlebot3_gazebo/launch
 And
 ```
 cp * ~/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch
+```
+
+
+## 6. Run Code
+
+First terminal run:
+```
+roslaunch turtlebot3_gazebo turtlebot3_stage_{number_of_stage}.launch
+```
+In another terminal run:
+```
+roslaunch project ddpg_stage_{number_of_stage}.launch
 ```
