@@ -48,3 +48,11 @@ And
   </horizontal>
 </scan>
 ```
+
+<br><br>
+
+## 4. Setting up Turtlebot3 world.
+```
+roscd turtlebot3_gazebo/worlds
+```
+Add 
