@@ -45,18 +45,10 @@ Example image of a bashrc file
 <br>
 
 And
-
-<br>
-
 ```
 source ~/.bashrc
 ```
-<br>
-
 And
-
-<br>
-
 ```
 gedit turtlebot3_burger.gazebo.xacro
 ```
