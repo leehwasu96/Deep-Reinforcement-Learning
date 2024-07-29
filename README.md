@@ -3,3 +3,8 @@ This repository designs and validates an End-to-End controller that learns contr
 
 # How to use
 1. 
+```
+cd ~/catkin_ws/src/
+git clone {link_git}
+cd ~/catkin_ws && catkin_make
+```
