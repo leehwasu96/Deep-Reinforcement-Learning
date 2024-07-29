@@ -14,4 +14,5 @@ git clone https://github.com/leehwasu96/Deep-Reinforcement-Learning.git
 ```
 ```
 cd ~/catkin_ws && catkin_make
+source devel/setup.bash
 ```
