@@ -5,7 +5,7 @@ This repository designs and validates an End-to-End controller that learns contr
 
 <br>
 
-1. Installing packages related to ROS Gazebo simulation.
+## 1. Installing packages related to ROS Gazebo simulation.
 ```
 cd ~/catkin_ws/src/
 ```
@@ -19,7 +19,7 @@ git clone https://github.com/leehwasu96/Deep-Reinforcement-Learning.git
 
 <br><br>
 
-2. Building and sourcing the catkin workspace.
+## 2. Building and sourcing the catkin workspace.
 ```
 cd ~/catkin_ws && catkin_make
 source devel/setup.bash
@@ -27,7 +27,7 @@ source devel/setup.bash
 
 <br><br>
 
-3. Configuring LiDAR scan data.
+## 3. Configuring LiDAR scan data.
 - In: turtlebot3/turtlebot3_description/urdf/turtlebot3_burger.gazebo.xacro.
 ```
 roscd turtlebot3_description/urdf
