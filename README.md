@@ -33,6 +33,13 @@ source devel/setup.bash
 roscd turtlebot3_description/urdf
 gedit turtlebot3_burger.gazebo.xacro
 ```
+If you encounter the error "roscd: No such package/stack 'turtlebot3_description/urdf'", execute the following command and then source it:
+```
+echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
+echo 'export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/{your local PC name}/catkin_ws/src/turtlebot3:$ROS_PACKAGE_PATH' >> ~/.bashrc
+echo 'export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/{your local PC name}/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo:$ROS_PACKAGE_PATH' >> ~/.bashrc
+echo 'export ROS_PACKAGE_PATH=/home/{your local PC name}/catkin_ws/src/Deep-Reinforcement-Learning/project:$ROS_PACKAGE_PATH' >> ~/.bashrc
+```
 And
 ```
 <xacro:arg name="laser_visual" default="false"/>   # Visualization of LDS. If you want to see LDS, set to `true`
@@ -41,10 +48,21 @@ And
 ```
 <scan>
   <horizontal>
-    <samples>360</samples>            # Number of LiDAR scan data sample. Modify it to 10
+    <samples>360</samples>
     <resolution>1</resolution>
     <min_angle>0.0</min_angle>
     <max_angle>6.28319</max_angle>
+  </horizontal>
+</scan>
+```
+If you want to modify the LiDAR data to detect only the front 180 degrees and recognize only 10 scan data points, update the code as follows:
+```
+<scan>
+  <horizontal>
+    <samples>10</samples>             <!-- Number of LiDAR scan data samples modified to 10 -->
+    <resolution>1</resolution>
+    <min_angle>-1.5708</min_angle>    <!-- -π/2 in radians -->
+    <max_angle>1.5708</max_angle>     <!-- π/2 in radians -->
   </horizontal>
 </scan>
 ```
@@ -67,12 +85,8 @@ roscd turtlebot3_gazebo/worlds
 <br><br>
 
 ## 5. Configuring Turtlebot3 launch file.
-```
-echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
-echo 'export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/{your local PC name}/catkin_ws/src/turtlebot3:$ROS_PACKAGE_PATH' >> ~/.bashrc
-echo 'export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/{your local PC name}/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo:$ROS_PACKAGE_PATH' >> ~/.bashrc
-echo 'export ROS_PACKAGE_PATH=/home/{your local PC name}/catkin_ws/src/Deep-Reinforcement-Learning/project:$ROS_PACKAGE_PATH' >> ~/.bashrc
-```
+if 
+
 And
 ```
 source ~/.bashrc
@@ -89,11 +103,11 @@ cp * ~/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch
 
 ## 6. Run Code
 
-First terminal run:
+First terminal:
 ```
 roslaunch turtlebot3_gazebo hs_turtlebot3_stage_{number_of_stage}.launch
 ```
-In another terminal run:
+In another terminal:
 ```
 roslaunch project hs_ddpg_stage_{number_of_stage}.launch
 ```
