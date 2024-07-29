@@ -19,4 +19,9 @@ cd ~/catkin_ws && catkin_make
 source devel/setup.bash
 ```
 
-3. 
+3. Configuring LiDAR scan data.
+- In: turtlebot3/turtlebot3_description/urdf/turtlebot3_burger.gazebo.xacro.
+```
+roscd turtlebot3_description/urdf
+gedit turtlebot3_burger.gazebo.xacro
+```
