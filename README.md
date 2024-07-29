@@ -51,8 +51,30 @@ And
 
 <br><br>
 
-## 4. Setting up Turtlebot3 world.
+## 4. Setting up Turtlebot3 world file.
+```
+cd catkin_ws/src/Deep-Reinforcement-Learning/turtlebot3_gazebo/worlds
+```
+And
+```
+cp * ~/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/worlds
+```
+And
 ```
 roscd turtlebot3_gazebo/worlds
 ```
-Add 
+
+<br><br>
+
+## 5. Configuring Turtlebot3 launch file.
+```
+echo 'export ROS_PACKAGE_PATH=/home/unicon1/catkin_ws/src/Deep-Reinforcement-Learning/project:$ROS_PACKAGE_PATH' >> ~/.bashrc
+```
+And
+```
+source ~/.bashrc
+```
+And
+```
+roscd project/launch
+```
