@@ -30,7 +30,7 @@ class Respawn():
     def __init__(self):
         self.modelPath = os.path.dirname(os.path.realpath(__file__))
         self.modelPath = self.modelPath.replace('project/src/utils',
-                                                'turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_square/goal_box/model2.sdf')
+                                                'turtlebot3_gazebo/models/turtlebot3_square/goal_box/model2.sdf')
         self.f = open(self.modelPath, 'r')
         self.model = self.f.read()
         self.stage = rospy.get_param('/stage_number')
