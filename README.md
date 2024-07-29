@@ -43,12 +43,23 @@ echo 'export ROS_PACKAGE_PATH=/home/{your local PC name}/catkin_ws/src/Deep-Rein
 Example image of a bashrc file
 ![1](https://github.com/user-attachments/assets/78b55cd0-44ed-49e1-b88c-e9a77a63513d)
 
+<br>
 
 And
 ```
-<xacro:arg name="laser_visual" default="false"/>   # Visualization of LDS. If you want to see LDS, set to `true`
+<xacro:arg name="laser_visual" default="false"/>
 ```
+Visualization of LDS. If you want to see LDS, set it to true as follows:
+```
+<xacro:arg name="laser_visual" default="true"/>
+```
+
+<br>
+
 And
+
+<br>
+
 ```
 <scan>
   <horizontal>
