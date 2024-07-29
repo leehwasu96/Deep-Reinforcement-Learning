@@ -46,6 +46,9 @@ Example image of a bashrc file
 <br>
 
 And
+
+<br>
+
 ```
 <xacro:arg name="laser_visual" default="false"/>
 ```
