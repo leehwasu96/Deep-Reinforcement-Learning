@@ -5,6 +5,8 @@ This repository designs and validates an End-to-End controller that learns contr
 1. Installing packages related to ROS Gazebo simulation.
 ```
 cd ~/catkin_ws/src/
-git clone {link_git}
+git clone https://github.com/ROBOTIS-GIT/turtlebot3
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations
 cd ~/catkin_ws && catkin_make
 ```
