@@ -111,7 +111,18 @@ cp * ~/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch
 
 <br><br>
 
-## 6. Run Code
+## 6. Configuring Goal model file.
+```
+cd /home/{your local PC name}/catkin_ws/src/Deep-Reinforcement-Learning/turtlebot3_gazebo/models/turtlebot3_square/goal_box
+```
+And
+```
+cp model2.* ~/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_square/goal_box
+```
+
+<br><br>
+
+## 7. Run Code
 
 First terminal:
 ```
