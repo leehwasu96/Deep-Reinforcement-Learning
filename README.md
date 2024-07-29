@@ -101,10 +101,6 @@ roscd turtlebot3_gazebo/worlds
 <br><br>
 
 ## 5. Configuring Turtlebot3 launch file.
-if 
-
-
-And
 ```
 cd ~ && cd catkin_ws/src/Deep-Reinforcement-Learning/turtlebot3_gazebo/launch
 ```
@@ -113,6 +109,7 @@ And
 cp * ~/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch
 ```
 
+<br><br>
 
 ## 6. Run Code
 
