@@ -91,9 +91,9 @@ cp * ~/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch
 
 First terminal run:
 ```
-roslaunch turtlebot3_gazebo turtlebot3_stage_{number_of_stage}.launch
+roslaunch turtlebot3_gazebo hs_turtlebot3_stage_{number_of_stage}.launch
 ```
 In another terminal run:
 ```
-roslaunch project ddpg_stage_{number_of_stage}.launch
+roslaunch project hs_ddpg_stage_{number_of_stage}.launch
 ```
