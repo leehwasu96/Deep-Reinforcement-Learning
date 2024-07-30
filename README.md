@@ -142,12 +142,21 @@ roslaunch project hs_ddpg_stage_{number_of_stage}.launch
 
 ## 8. Validation result
 
-https://github.com/user-attachments/assets/9fd9f933-0f39-4ca6-bddc-f282881700d1
+**Validation Video 1**
 
-https://github.com/user-attachments/assets/4c8d99fd-807c-4954-bf1e-90f77ce08f3e
+[Validation Video 1](https://github.com/user-attachments/assets/9fd9f933-0f39-4ca6-bddc-f282881700d1)
 
-https://github.com/user-attachments/assets/19b1cf15-781e-48e6-bee9-a4a3b5f348c9
+**Validation Video 2**
 
-https://github.com/user-attachments/assets/04e4a073-3893-41ac-82a7-4fa6bd44c5a9
+[Validation Video 2](https://github.com/user-attachments/assets/4c8d99fd-807c-4954-bf1e-90f77ce08f3e)
+
+**Validation Video 3**
+
+[Validation Video 3](https://github.com/user-attachments/assets/19b1cf15-781e-48e6-bee9-a4a3b5f348c9)
+
+**Validation Video 4**
+
+[Validation Video 4](https://github.com/user-attachments/assets/04e4a073-3893-41ac-82a7-4fa6bd44c5a9)
+
 
 
