@@ -137,3 +137,5 @@ In another terminal:
 ```
 roslaunch project hs_ddpg_stage_{number_of_stage}.launch
 ```
+
+## 8. Validation result
