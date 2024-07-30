@@ -142,34 +142,12 @@ roslaunch project hs_ddpg_stage_{number_of_stage}.launch
 
 ## 8. Validation result
 
-<table>
-  <tr>
-    <td>
-      <video width="300" controls>
-        <source src="https://github.com/user-attachments/assets/4d7a1c1d-00b6-4930-845c-a6545a7044bf" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </td>
-    <td>
-      <video width="300" controls>
-        <source src="https://github.com/user-attachments/assets/b806bb16-3a92-42f2-8ce2-6e41fe33a180" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <video width="300" controls>
-        <source src="https://github.com/user-attachments/assets/b062fd87-1d4a-4939-88c5-0fa5b11b4d3e" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </td>
-    <td>
-      <video width="300" controls>
-        <source src="https://github.com/user-attachments/assets/8f275a5c-0b45-4b6e-b117-6e44505a12ac" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </td>
-  </tr>
-</table>
+https://github.com/user-attachments/assets/9fd9f933-0f39-4ca6-bddc-f282881700d1
+
+https://github.com/user-attachments/assets/4c8d99fd-807c-4954-bf1e-90f77ce08f3e
+
+https://github.com/user-attachments/assets/19b1cf15-781e-48e6-bee9-a4a3b5f348c9
+
+https://github.com/user-attachments/assets/04e4a073-3893-41ac-82a7-4fa6bd44c5a9
+
 
