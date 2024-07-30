@@ -138,4 +138,48 @@ In another terminal:
 roslaunch project hs_ddpg_stage_{number_of_stage}.launch
 ```
 
+<br><br>
+
 ## 8. Validation result
+
+<table>
+  <tr>
+    <td>
+      <video width="300" controls>
+        <source src="https://github.com/user-attachments/assets/4d7a1c1d-00b6-4930-845c-a6545a7044bf" type="mp4">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+    <td>
+      <video width="300" controls>
+        <source src="(https://github.com/user-attachments/assets/b806bb16-3a92-42f2-8ce2-6e41fe33a180)" type="mp4">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <video width="300" controls>
+        <source src="비디오3_URL" type="비디오_타입">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+    <td>
+      <video width="300" controls>
+        <source src="비디오4_URL" type="비디오_타입">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+https://github.com/user-attachments/assets/b062fd87-1d4a-4939-88c5-0fa5b11b4d3e
+
+
+
+https://github.com/user-attachments/assets/8f275a5c-0b45-4b6e-b117-6e44505a12ac
+
