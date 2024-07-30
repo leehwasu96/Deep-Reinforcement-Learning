@@ -128,6 +128,11 @@ First terminal:
 ```
 roslaunch turtlebot3_gazebo hs_turtlebot3_stage_{number_of_stage}.launch
 ```
+Example image of Gazebo simulation environment
+![2](https://github.com/user-attachments/assets/fc859e17-ec38-421d-b8c6-90feda93309f)
+
+
+
 In another terminal:
 ```
 roslaunch project hs_ddpg_stage_{number_of_stage}.launch
