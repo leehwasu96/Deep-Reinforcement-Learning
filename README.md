@@ -15,8 +15,7 @@
 #  Development environment
   - This practice was conducted in an Ubuntu 18.04 LTS and ROS(Robot Operating System) 1 Melodic environment.** <br><br>
 
-#  How to use <br><br>
-
+#  How to use
 ## 1. Installing packages related to ROS Gazebo simulation.
 ```
 cd ~/catkin_ws/src/
