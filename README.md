@@ -5,7 +5,8 @@
   - E-mail : leehwasu96@naver.com (or leehwasu9696@inu.ac.kr)<br><br>
 
 # Project Description
-  - This repository designs and validates an End-to-End controller that learns control inputs for moving a Turtlebot3 model to a desired location based on Deep Reinforcement Learning in the ROS Gazebo simulation environment. <br><br>
+  - This repository designs and validates an End-to-End controller that learns control inputs for moving a Turtlebot3 model <br><br>
+    to a desired location based on Deep Reinforcement Learning in the ROS Gazebo simulation environment. <br><br>
 
 #  Repository Description
   - The 'project' directory contains packages related to DRL(Deep Reinforcement Learning). <br><br>
