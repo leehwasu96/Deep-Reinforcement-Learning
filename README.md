@@ -1,13 +1,13 @@
 # Deep-Reinforcement-Learning
-  Author : Hwasu Lee<br><br>
-  Affiliation : UNICON LAB (Incheon National University, South Korea)<br><br>
-  Position : M.A. student<br><br>
-  E-mail : leehwasu96@naver.com (or leehwasu9696@inu.ac.kr)<br><br>
+  - Author : Hwasu Lee<br><br>
+  - Affiliation : UNICON LAB (Incheon National University, South Korea)<br><br>
+  - Position : M.A. student<br><br>
+  - E-mail : leehwasu96@naver.com (or leehwasu9696@inu.ac.kr)<br><br>
 
 # Project Description
 This repository designs and validates an End-to-End controller that learns control inputs for moving a Turtlebot3 model to a desired location based on Deep Reinforcement Learning in the ROS Gazebo simulation environment. <br><br>
 
-# Camera(OpenCV) Lecture Note Description
+#  Description
   - The 'project' directory contains packages related to DRL(Deep Reinforcement Learning). <br><br>
   - The 'turtlebot3_gazebo' directory is a folder that stores custom world information. <br><br>
 
