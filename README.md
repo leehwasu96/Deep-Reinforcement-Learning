@@ -139,6 +139,8 @@ First terminal:
 ```
 roslaunch turtlebot3_gazebo hs_turtlebot3_stage_{number_of_stage}.launch
 ```
+<br>
+
 Example image of Gazebo simulation environment <br>
 <img src="https://github.com/user-attachments/assets/d14c6276-3cb9-4bec-a1ab-f982a4ebcbad" alt="Example image of Gazebo simulation environment" width="500">
 
