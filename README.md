@@ -30,7 +30,7 @@ git clone https://github.com/leehwasu96/Deep-Reinforcement-Learning.git
 
 <br><br>
 
-## 2. Building and sourcing the catkin workspace.
+## 2. Building and sourcing the catkin workspace
 ```
 cd ~/catkin_ws && catkin_make
 source devel/setup.bash
@@ -38,7 +38,7 @@ source devel/setup.bash
 
 <br><br>
 
-## 3. Configuring LiDAR scan data.
+## 3. Configuring LiDAR scan data
 - In: turtlebot3/turtlebot3_description/urdf/turtlebot3_burger.gazebo.xacro.
 ```
 roscd turtlebot3_description/urdf
@@ -96,7 +96,7 @@ If you want to modify the LiDAR data to detect only the front 180 degrees and re
 
 <br><br>
 
-## 4. Setting up Turtlebot3 world file.
+## 4. Setting up Turtlebot3 world file
 ```
 cd ~ && cd catkin_ws/src/Deep-Reinforcement-Learning/turtlebot3_gazebo/worlds
 ```
@@ -111,7 +111,7 @@ roscd turtlebot3_gazebo/worlds
 
 <br><br>
 
-## 5. Configuring Turtlebot3 launch file.
+## 5. Configuring Turtlebot3 launch file
 ```
 cd ~ && cd catkin_ws/src/Deep-Reinforcement-Learning/turtlebot3_gazebo/launch
 ```
@@ -122,7 +122,7 @@ cp * ~/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch
 
 <br><br>
 
-## 6. Configuring Goal model file.
+## 6. Configuring Goal model file
 ```
 cd /home/{your local PC name}/catkin_ws/src/Deep-Reinforcement-Learning/turtlebot3_gazebo/models/turtlebot3_square/goal_box
 ```
